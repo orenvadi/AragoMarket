@@ -1,6 +1,6 @@
 <#macro template user>
     <!doctype html>
-    <html lang="ru">
+    <html lang="ru" data-bs-theme="dark">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -8,17 +8,17 @@
         <link rel="stylesheet" href="/static/css/style.css">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-              integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-              crossorigin="anonymous">
-
-        <title>BUYSELL</title>
+<#--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"-->
+<#--              integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"-->
+<#--              crossorigin="anonymous">-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <title>AragoMarket</title>
     </head>
     <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a href="/">
-                <span class="navbar-brand mb-0 h1">BUYSELL</span>
+                <span class="navbar-brand mb-0 h1">AragoMarket</span>
             </a>
             <#if user.email??>
                 <div class="dropdown text-end">

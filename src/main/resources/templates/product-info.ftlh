@@ -16,10 +16,10 @@
                         <text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </svg>
 
-                    <div class="container">
+                    <div class="container" style="height: 1000px">
                         <div class="carousel-caption">
                             <a href="/images/${image.id}">
-                                <img class="product" style="height: 100px" src="/images/${image.id}">
+                                <img class="product" style="width: 1000px; height: 1000px" src="/images/${image.id}">
                             </a>
                         </div>
                     </div>

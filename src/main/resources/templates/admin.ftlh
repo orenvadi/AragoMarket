@@ -1,7 +1,7 @@
 <#import "blocks/template.ftlh" as t>
 <@t.template user>
     `<h1 style="text-align: center">Admin panel</h1><hr>
-    <table class="table table-hover table-dark">
+    <table class="table table-hover table-light">
         <tr>
             <th scope="col">Email</th>
             <th scope="col">Phone number</th>

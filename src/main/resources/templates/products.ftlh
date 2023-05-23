@@ -1,6 +1,6 @@
 <#import "blocks/template.ftlh" as t>
 <@t.template user>
-    <h1 style="text-align: center">Product search</h1><hr>
+    <h1 style="text-align: center">Feed</h1><hr>
     <form method="get" action="/">
         <div class="form-row">
             <div class="form-group col-md-2">
@@ -17,14 +17,14 @@
                 <input type="text" name="searchWord" <#if searchWord??>value="${searchWord}"</#if> class="form-control"
                        id="searchWord">
             </div>
-            <button style="width: 100%" type="submit" class="btn btn-dark">Search</button>
+            <button style="width: 100%" type="submit" class="btn btn-light">Search</button>
         </div>
     </form>
     <hr>
     <div class="card-columns">
         <#list products as product>
             <a href="/product/${product.id}" class="product-link">
-                <div class="card text-white bg-dark my-3 product">
+                <div class="card text-black bg-light my-3 product">
 
                     <img src="/images/${product.previewImageId}"
                          class="card-img-top">
